@@ -37,7 +37,7 @@ public class Client1SocketDemo {
             //(1)获取SOCKET的输入流
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             String result = bufferedReader.readLine();
-            System.out.println("Client1: 我接收到服务端的返回消息：" + result);
+            System.out.println("Client1: 我接收到服务端的返回消息, 消息内容是：" + result);
         } catch (Exception e) {
             e.printStackTrace();
         }finally {
