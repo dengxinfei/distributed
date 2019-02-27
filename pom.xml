@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.dking.distributed</groupId>
+    <groupId>com.kelvin</groupId>
     <artifactId>distributed</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -15,6 +15,11 @@
         <module>rmi-chapter</module>
         <module>proxy-chapter</module>
         <module>zk-chapter</module>
+        <module>dubbo-chapter</module>
+        <module>my-chapter</module>
+        <module>activeMQ</module>
+        <module>springboot</module>
+        <module>concurrent</module>
     </modules>
 
 

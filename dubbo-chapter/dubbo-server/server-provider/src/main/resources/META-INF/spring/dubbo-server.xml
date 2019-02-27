@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dobbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+       <!-- 配置服务方信息-->
+       <dobbo:application name="dubbo-server" owner="xinfei" />
+
+       <!--配置注册中心 -->
+       <dubbo:registry address="zookeeper://127.0.0.1:1111" />
+
+       <!-- 配置协议-->
+       <dubbo:protocol port="20880" name="dubbo" />
+
+       <!--<dobbo:provider />-->
+
+       <!--<dobbo:module name="" />-->
+
+       <!--<dobbo:monitor />-->
+
+       <!--<dobbo:consumer/>-->
+
+       <!--<dobbo:annotation/>-->
+
+
+       <dobbo:service interface="com.dking.dubbo.IDubboService" ref="helloService" protocol="dubbo"
+                      cluster="failover" retries="2" timeout="100" scope="remote" />
+       <bean id="helloService" class="com.dking.dubbo.DubboServiceImpl" />
+
+
+
+</beans>

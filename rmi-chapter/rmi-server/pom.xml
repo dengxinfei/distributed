@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.dking.distributed.rmi.server</groupId>
+    <groupId>com.dking.distributed.rmi</groupId>
     <artifactId>rmi-server</artifactId>
 
 
