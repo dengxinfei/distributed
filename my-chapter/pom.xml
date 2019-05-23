@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.dking.distributed.my-chapter</groupId>
+    <groupId>com.kelvin.my-chapter</groupId>
     <artifactId>my-chapter</artifactId>
 
     <name>my-chapter</name>
